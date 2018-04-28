@@ -1,0 +1,48 @@
+$color_1: #EF5350;
+$color_2: #0097A7;
+$bg_white: #fff;
+$rgba_1:rgba(239, 83, 80, 0.534);
+$rgba_2:rgba(0, 150, 167, 0.534);
+$rgba_white:rgba(255, 255, 255, 0.7);
+$dark_color:#007580;
+$grey_light: #f7f7f7;
+$rgba_back: rgba(0, 0, 0, 0.2);
+$rgba_back_darker: rgba(0, 0, 0, 0.6);
+@keyframes moveinleft {
+    0% {
+        opacity: 0;
+        transform: translate(-100px);
+    }
+    80% {
+        transform: translate(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveinright {
+    0% {
+        opacity: 0;
+        transform: translate(100px);
+    }
+    80% {
+        transform: translate(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveinbottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

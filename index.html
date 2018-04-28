@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Courses website</title>
+  <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+  <link rel="shortcut icon" href="img\logo.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/plugin.js"></script>
+   <script src="js/javascript.js"></script>
+</head>
+
+<body>
+  <!---------------------- start navbar-->
+  <!-------------------- fixed options -------------->
+  <div class="fixed-option">
+    <div class="side-menu">
+      <a href="#" class="active">Home</a>
+      <a href="#feat-stu">features courses</a>
+      <a href="#">Latest News</a>
+      <a href="#">Courses</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="close-nav far fa-window-close"></div>
+  </div>
+  <!-------------------- end options -------------->
+  <div class="main-header">
+    <a class="brand" href="#">
+      <img src="img/logo.png" title="campny logo">
+    </a>
+    <a class="open-nav fas fa-bars"></a>
+    <div class="user">
+      <a href="#waleed" class="user-pic">
+        <img src="img/students/waleed.jpg" title="comrec logo">
+      </a>
+      <a class="user-name" href="#waleed" id="user-ahmed">Waleed,</a>
+    </div>
+    <a class="login-out-user" href="#login" onclick="logout()" id="logout"> Logout</a>
+  </div>
+  <!--------------------------- end navbar-->
+  <!--------------------------------- start header-->
+  <header class="header" id="header">
+    <div class="text-box">
+      <div class="container">
+        <h1 class="heading-primary">
+          <span class="heading-primary-main">hello world!</span>
+          <span class="heading-primary-sub">Welcome to Our courses</span>
+        </h1>
+        <a href="#" class="btn btn-white btn-animated" id="start">Discover Our courses</a>
+      </div>
+    </div>
+    </div>
+  </header>
+  <!--------------------------------------- end header -->
+  <!----------------- feat section ------------>
+  <section class="feature-section" id="feat-section">
+    <div class="container">
+      <h1 id="feat-h" class="text-center">Start now with these courses</h1>
+      <div class="row">
+        <div class="feat col-md-6 col-lg-4">
+          <div class="feat-box">
+            <i class="feat-icon fas fa-desktop fa-3x"></i>
+            <h3 class="feat-head">Programing Courses</h3>
+            <p class="feat-text">Our beautifully-designed website templates come with hundreds of customizable features.</p>
+          </div>
+        </div>
+        <div class="feat col-md-6 col-lg-4">
+          <div class="feat-box">
+            <i class="feat-icon fas fa-language fa-3x"></i>
+            <h3 class="feat-head">languages Courses</h3>
+            <p class="feat-text">Our beautifully-designed website templates come with hundreds of customizable features.</p>
+          </div>
+        </div>
+        <div class="feat col-md-6 col-lg-4">
+          <div class="feat-box">
+            <i class="feat-icon fas fa-handshake fa-3x"></i>
+            <h3 class="feat-head">Marketing Courses</h3>
+            <p class="feat-text">Our beautifully-designed website templates come with hundreds of customizable features.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="grades" id="grades">
+    <div class="container">
+      <h1>Students grades</h1>
+      <p>The results of the students' grades in the German language course for March 2018 are now available</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>German language Grades</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="#ahmed">Ahmed Abdallah</a>
+            </td>
+            <td>60 of 60
+              <div class="rate">
+                <span> 100% </span>
+                <span> Excellent </span>
+              </div>
+            </td>
+            <div class="popup" id="ahmed">
+              <div class="contaner">
+                <div class="popup_content">
+                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <img src="img/students/ahmed.jpg">
+                  <h2>Ahmed Abdallah</h2>
+                  <h4>Web Designer</h4>
+                  <h6>From Cairo, Egypt</h6>
+                  <h6>faculty of science sohag university</h6>
+                  <p class="lead">Interested in German course and web design course</p>
+                  <div class="social">
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <button class="button-effect from-left">
+                    <span class="fi1"></span>
+                    <span class="fi2">Contact</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </tr>
+          <tr>
+            <td>
+              <a href="#waleed">Waleed Mohamed</a>
+            </td>
+            <td>60 of 60
+              <div class="rate">
+                <span> 100% </span>
+                <span> Excellent </span>
+              </div>
+            </td>
+            <div class="popup" id="waleed">
+              <div class="contaner">
+                <div class="popup_content">
+                  <a href="#" class="close-popup far fa-window-close"></a>
+                  <img src="img/students/waleed.jpg">
+                  <h2>Waleed Mohamed</h2>
+                  <h4>Student</h4>
+                  <h6>From Alex, Egypt</h6>
+                  <h6>faculty of medicine Cairo university</h6>
+                  <p class="lead">Interested in German course and Ui/Ux course</p>
+                  <div class="social">
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <button class="button-effect from-left">
+                    <span class="fi1"></span>
+                    <span class="fi2">Contact</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </tr>
+          <tr>
+            <td>
+              <a href="#mohamed">Mohamed Ahmed</a>
+            </td>
+            <td>58 of 60
+              <div class="rate">
+                <span> 96.6% </span>
+                <span> Excellent </span>
+              </div>
+            </td>
+            <div class="popup" id="mohamed">
+              <div class="contaner">
+                <div class="popup_content">
+                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <img src="img/students/mohamed.jpg">
+                  <h2>Mohamed Ahmed</h2>
+                  <h4>Teacher</h4>
+                  <h6>From Faiyum , Egypt</h6>
+                  <h6>faculty of alsun ain shams university</h6>
+                  <p class="lead">Interested in German course and grafic design course</p>
+                  <div class="social">
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <button class="button-effect from-left">
+                    <span class="fi1"></span>
+                    <span class="fi2">Contact</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </tr>
+          <tr>
+            <td>
+              <a href="#omar">Omar Mahmoud</a>
+            </td>
+            <td>55 of 60
+              <div class="rate">
+                <span> 91.6% </span>
+                <span> Excellent </span>
+              </div>
+            </td>
+            <div class="popup" id="omar">
+              <div class="contaner">
+                <div class="popup_content">
+                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <img src="img/students/omar.jpg">
+                  <h2>Omar Mahmoud</h2>
+                  <h4>Student</h4>
+                  <h6>From asyout , Egypt</h6>
+                  <h6>faculty of engineering cairo university</h6>
+                  <p class="lead">Interested in German course English course</p>
+                  <div class="social">
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <button class="button-effect from-left">
+                    <span class="fi1"></span>
+                    <span class="fi2">Contact</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </tr>
+          <tr>
+            <td>
+              <a href="#mostafa">Moustafa Abdelaziz</a>
+            </td>
+            <td>54 of 60
+              <div class="rate">
+                <span> 90% </span>
+                <span> Excellent </span>
+              </div>
+            </td>
+            <div class="popup" id="mostafa">
+              <div class="contaner">
+                <div class="popup_content">
+                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <img src="img/students/moustafa.jpg">
+                  <h2>Moustafa Abdelaziz</h2>
+                  <h4></h4>
+                  <h6>From Aswan , Egypt</h6>
+                  <h6>faculty of dentistry alexandria university</h6>
+                  <p class="lead">Interested in German course italic course</p>
+                  <div class="social">
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <button class="button-effect from-left">
+                    <span class="fi1"></span>
+                    <span class="fi2">Contact</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </tr>
+          <tr>
+            <td>
+              <a href="#kareem">Kareem Taha</a>
+            </td>
+            <td>53 of 60
+              <div class="rate">
+                <span> 88% </span>
+                <span> Excellent </span>
+              </div>
+            </td>
+            <div class="popup" id="kareem">
+              <div class="contaner">
+                <div class="popup_content">
+                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <img src="img/students/kareem.jpg">
+                  <h2>Kareem Taha</h2>
+                  <h4></h4>
+                  <h6>From Luxor , Egypt</h6>
+                  <h6>faculty of engineering assiut university</h6>
+                  <p class="lead">Interested in German course and autocad course</p>
+                  <div class="social">
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <button class="button-effect from-left">
+                    <span class="fi1"></span>
+                    <span class="fi2">Contact</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </tr>
+          <tr>
+            <td>
+              <a href="#khaled">Khaled Hassan</a>
+            </td>
+            <td>50 of 60
+              <div class="rate">
+                <span> 83% </span>
+                <span> Very Good </span>
+              </div>
+            </td>
+            <div class="popup" id="khaled">
+              <div class="contaner">
+                <div class="popup_content">
+                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <img src="img/students/khaled.jpg">
+                  <h2>Khaled Hassan</h2>
+                  <h4></h4>
+                  <h6>From Sohag , Egypt</h6>
+                  <h6>faculty of education south valley university</h6>
+                  <p class="lead">Interested in German course and English course</p>
+                  <div class="social">
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <button class="button-effect from-left">
+                    <span class="fi1"></span>
+                    <span class="fi2">Contact</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </tr>
+          <tr>
+            <td>
+              <a href="#salma">Salma Mohamed</a>
+            </td>
+            <td>50 of 60
+              <div class="rate">
+                <span> 83% </span>
+                <span> Very Good </span>
+              </div>
+            </td>
+            <div class="popup" id="salma">
+              <div class="contaner">
+                <div class="popup_content">
+                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <img src="img/students/salma.jpg">
+                  <h2>Salma Mohamed</h2>
+                  <h4></h4>
+                  <h6>From Cairo , Egypt</h6>
+                  <h6>faculty of pharmacy cairo university</h6>
+                  <p class="lead">Interested in German course and Web Design course</p>
+                  <div class="social">
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <button class="button-effect from-left">
+                    <span class="fi1"></span>
+                    <span class="fi2">Contact</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </tr>
+          <tr>
+            <td>
+              <a href="#nermeen">Nermeen Ahmed</a>
+            </td>
+            <td>49 of 60
+              <div class="rate">
+                <span> 81% </span>
+                <span> Very Good </span>
+              </div>
+            </td>
+            <div class="popup" id="nermeen">
+              <div class="contaner">
+                <div class="popup_content">
+                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <img src="img/students/nermeen.jpg">
+                  <h2>Nermeen Ahmed</h2>
+                  <h4></h4>
+                  <h6>From mansoura , Egypt</h6>
+                  <h6>faculty of commerce mansoura university</h6>
+                  <p class="lead">Interested in German course and italic course</p>
+                  <div class="social">
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <button class="button-effect from-left">
+                    <span class="fi1"></span>
+                    <span class="fi2">Contact</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </tr>
+          <tr>
+            <td>
+              <a href="#mahmoud">Mahmoud Ali</a>
+            </td>
+            <td>45 of 60
+              <div class="rate">
+                <span> 75% </span>
+                <span> Good </span>
+              </div>
+            </td>
+            <div class="popup" id="mahmoud">
+              <div class="contaner">
+                <div class="popup_content">
+                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <img src="img/students/mahoud.jpg">
+                  <h2>Mahmoud Ali</h2>
+                  <h4></h4>
+                  <h6>From Alex , Egypt</h6>
+                  <h6>faculty of law alexandria university</h6>
+                  <p class="lead">Interested in German course and back-end developer course</p>
+                  <div class="social">
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <button class="button-effect from-left">
+                    <span class="fi1"></span>
+                    <span class="fi2">Contact</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  </div>
+  <div class="login" id="login">
+    <div class="container">
+      <form class="login-content">
+        <div class="login-logo">
+          <img src="img/logo.png" title="loco campny">
+        </div>
+        <input type="text" class="login-input" placeholder="Email Adress" autofocus>
+        <input type="password" class="login-input" placeholder="Password">
+        <button class="button-effect from-left">
+          <span class="fi1"></span>
+          <span class="fi2">Log In</span>
+        </button>
+        <button class="button-effect from-left facbook-login">
+          <span class="fi1"></span>
+          <span class="fi2">login with facebook</span>
+        </button>
+        <p class="login-lost">
+          <a href="">Forgot Password?</a>
+        </p>
+        <a href="#header" class="close-login far fa-window-close"></a>
+      </form>
+    </div>
+  </div>
+  <!--------------------------feat studets-->
+  <section class="feat-students" id="feat-stu">
+    <div class="container">
+      <h1 class="main-head">Special students</h1>
+      <h4>These are some of our outstanding students in some courses for March 2018</h4>
+      <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active">
+            <img src="img/students/ahmed.jpg">
+          </li>
+          <li data-target="#demo" data-slide-to="1">
+            <img src="img/students/waleed.jpg">
+          </li>
+          <li data-target="#demo" data-slide-to="2">
+            <img src="img/students/mohamed.jpg">
+          </li>
+        </ul>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="feat-student">
+              <img src="img/students/ahmed.jpg">
+
+              <h2>Ahmed Abdallah</h2>
+              <h4>Web Designer</h4>
+              <div class="icon">
+                <a href="#">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
+              <div class="icon">
+                <a href="#">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+              </div>
+
+              <div class="icon">
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+
+              <div class="icon">
+                <a href="#">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="feat-student">
+              <img src="img/students/waleed.jpg">
+              <h2>Waleed Mohamed</h2>
+              <h4>Student</h4>
+              <div class="icon">
+                <a href="#">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
+              <div class="icon">
+                <a href="#">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+              </div>
+
+              <div class="icon">
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+
+              <div class="icon">
+                <a href="#">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="feat-student">
+              <img src="img/students/mohamed.jpg">
+              <h2>Mohamed Ahmed</h2>
+              <h4>Teacher</h4>
+              <div class="icon">
+                <a href="#">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
+              <div class="icon">
+                <a href="#">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+              </div>
+
+              <div class="icon">
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+
+              <div class="icon">
+                <a href="#">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-------------------------- feat students-->
+  <!------------------------------ sign up-->
+  <div class="signup">
+    <div class="overlay">
+      <div class="container">
+        <h1>Register for a Free Account</h1>
+        <h4>make the most of your performance life</h4>
+        <form class="signup-content">
+          <div class="signup-logo">
+            <img src="img/logo.png" title="loco campny">
+          </div>
+          <input type="name" class="signup-input" placeholder="first name">
+          <input type="name" class="signup-input" placeholder="last name">
+          <input type="text" class="signup-input" placeholder="phone number">
+          <input type="email" class="signup-input" placeholder="Email Adress">
+          <input type="password" class="signup-input" placeholder="Password">
+          <input type="password" class="signup-input" placeholder="retype Password">
+          <p>By creating an account you agree to our
+            <a href="#">Terms & Privacy</a>.</p>
+          <label class="container">
+            <input type="checkbox"> By accept the terms of use and privacy policy
+          </label>
+          <button class="button-effect from-left">
+            <span class="fi1"></span>
+            <span class="fi2">Sign Up</span>
+          </button>
+          <button class="button-effect from-left facbook-signup">
+            <span class="fi1"></span>
+            <span class="fi2">Sign Up with facebook</span>
+          </button>
+          <p class="not-have">
+            <a href="#login">Already have an account?</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!----------------------- end sgin up-->
+    <!--------------------------------footer-->
+    <footer class="fixed-footer">
+      <div class="left">
+        &copy; 2018 TaReK
+        <a class="terms" href="#">Terms | Policy</a>
+      </div>
+      <div class="right">
+        <i class="fas fa-phone"></i>
+        <span>01065596566</span>
+        <i class="go-up fas fa-angle-double-up"></i>
+      </div>
+    </footer>
+    <div class="message" id="message">
+      <div class="container">
+        <form class="message-content">
+          <div class="message-logo">
+            <img src="img/logo.png" title="loco campny">
+          </div>
+          <h2>Contact us</h2>
+          <input type="name" class="message-input" placeholder="Full Name">
+          <input type="text" class="message-input" placeholder="Email Adress" autofocus>
+          <textarea id="subject" name="subject" placeholder="Write a message for us.."></textarea>
+          <button class="button-effect from-left">
+            <span class="fi1"></span>
+            <span class="fi2">submit</span>
+          </button>
+          <br>
+          <a href="#header" class="close-message far fa-window-close"></a>
+        </form>
+      </div>
+    </div>
+    <a href="#message" class="message-click fas fa-envelope"></a>
+    <!---------------- end footer-->
+    <div class="loading" id="loading">
+      <div class="container">
+      <div class="loader"></div>
+      <h2>Loading Page...</h2>
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+    </div>
+    <div id="home"></div>
+</body>
+
+</html>

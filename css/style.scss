@@ -1,0 +1,367 @@
+@import "sass/_variables.scss";
+@import "sass/_header.scss";
+@import "sass/_feature_section.scss";
+@import "sass/_grades.scss";
+@import "sass/_feat_students.scss";
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Jua', sans-serif;
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    margin-right: -23px;
+    padding: 5px;
+    display: inline-block;
+    a {
+        font-size: 35px;
+        background: $bg_white;
+        padding: 5px 10px;
+        border-radius: 50%;
+        color: $color_2;
+        box-shadow: 0 0px 15px 0px #000;
+        transition: all .5s ease-in-out;
+        &:hover {
+            color: $color_1;
+            width: 95px;
+            height: 95px;
+        }
+    }
+}
+
+/*  start fixed opsion */
+
+.fixed-option {
+    background: linear-gradient(to right, $color_2, $color_1);
+    color: #fff;
+    position: fixed;
+    padding-top: 20px;
+    left: -240px;
+    top: 0;
+    height: 100%;
+    width: 240px;
+    z-index: 9999;
+    box-shadow: 0 0px 23px -4px #000;
+    .close-nav {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: $bg_white;
+        transition: all .3s ease-in-out;
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        &:hover {
+            color: $rgba_back_darker;
+        }
+    }
+    .side-menu {
+        text-align: center;
+    }
+    .side-menu a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 5px 0;
+        width: 100%;
+        color: $bg_white;
+        transition: all .3s ease-in-out;
+        &:hover {
+            background: $color_1;
+            border-radius: 5px;
+        }
+    }
+}
+
+.main-header {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 55;
+    display: flex;
+    color: #fff;
+    transition: all 1s ease-in-out;
+    .open-nav {
+        font-size: 30px;
+        left: 18px;
+        position: absolute;
+        margin: 15px 0;
+        cursor: pointer;
+    }
+    .login-out-user {
+        padding: 1px 5px;
+        font-weight: 600;
+        transition: all .2s ease-in-out;
+        height: 28px;
+        width: 63px;
+        margin: 15px 10px 15px 0;
+        color: $bg_white;
+        position: absolute;
+        right: 1px;
+        &:hover {
+            text-decoration: none;
+            background: $color_1;
+            border-radius: 5px;
+        }
+    }
+    .brand {
+        display: block;
+        position: absolute;
+        left: 62px;
+        margin-top: 3px;
+        img {
+            height: 55px;
+            width: 55px;
+        }
+    }
+    .user {
+        position: absolute;
+        right: 72px;
+        padding: 5px 0px 5px 0px;
+        a {
+            color: $bg_white;
+            font-weight: 600;
+            transition: all .2s ease-in-out;
+            &:hover {
+                text-decoration: none;
+                background: $color_1;
+                border-radius: 5px;
+            }
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .user-pic:hover {
+            background: none;
+            border-radius: 0;
+        }
+    }
+}
+
+.button-effect {
+    padding: 10px;
+    border-radius: 10px;
+    background: $color_2;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    width: 170px;
+    font-weight: bold;
+    overflow: hidden;
+    color: #fff;
+    border: none
+}
+
+@keyframes ani-left {
+    0% {
+        width: 0
+    }
+    70% {
+        width: 100px
+    }
+}
+
+.from-left .fi1 {
+    background: $color_1;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100px;
+    display: block;
+    transition: all .4s ease-in-out
+}
+
+.from-left:hover .fi1 {
+    opacity: .4;
+    width: 100%;
+}
+
+.from-left span:last-child {
+    z-index: 2;
+    position: relative;
+}
+
+.login {
+    background: $rgba_back_darker;
+    height: 100vh;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transform: rotate(-90deg);
+    transition: all 1s ease-in-out;
+    &:target {
+        visibility: visible;
+        opacity: 1;
+        transform: rotate(0);
+        transform: translate(0);
+    }
+    .login-content {
+        margin: 7rem auto;
+        width: 340px;
+        height: 445px;
+        background: white;
+        border: 1px solid #c4c4c4;
+        text-align: center;
+        border-radius: 5rem 1rem;
+        overflow: hidden;
+        left: 0;
+        top: 0;
+        .close-login {
+            font-size: 35px;
+            color: $color_1;
+            margin-top: .5rem;
+        }
+        .facbook-login {
+            width: 180px;
+            margin-top: 1rem;
+            background: blue;
+        }
+    }
+    .login-logo {
+        background: $color_1;
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .login-input {
+        width: 285px;
+        height: 50px;
+        margin-bottom: 25px;
+        padding-left: 10px;
+        font-size: 15px;
+        background: rgba(255, 255, 255, 0.74);
+        border: 3px solid #29b6f6;
+        border-radius: 4px;
+        display: block;
+        margin: 15px auto;
+        transition: all .5s ease-in-out;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    input[type=text]:focus,
+    input[type=password]:focus,
+    input[type=name]:focus,
+    input[type=email]:focus {
+        border: 4px solid $color_1;
+    }
+    .login-input:focus {
+        border-color: #6e8095;
+        outline: none;
+    }
+    .login-button {
+        width: 100%;
+        height: 50px;
+        padding: 0;
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+        background: #f0776c;
+        border: 0;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: 0;
+    }
+    .login-lost {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .login-lost a {
+        color: #666;
+        text-decoration: none;
+        font-size: 13px;
+    }
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    right: 0;
+    background: url(../img/form.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 999999;
+}
+.loading h2 {
+    color: $bg_white;
+    text-align: center;
+    position: relative;
+    z-index: 9999;
+    top: 50px;
+    margin: auto;
+    font-size: 5em;
+}
+.loader {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.51);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+  }.spinner {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 200px auto;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(to right, $color_2, $color_1);
+    opacity: .9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }

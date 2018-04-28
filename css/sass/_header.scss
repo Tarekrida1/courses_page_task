@@ -1,0 +1,93 @@
+.header {
+    height: 90vh;
+    background-image: linear-gradient(to right bottom, $rgba_1, $rgba_2), url(../img/header.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
+}
+
+.text-box {
+    padding-top: 40vh;
+    text-align: center;
+    .btn {
+        &:link {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 15px 40px;
+            display: inline-block;
+            border-radius: 100px;
+            transition: all .2s;
+            margin-top: 10px;
+            position: relative;
+        }
+        &:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 15px 40px;
+            display: inline-block;
+            border-radius: 100px;
+            transition: all .2s;
+            margin-top: 10px;
+            position: relative;
+        }
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px 1px $dark_color;
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+        &:active {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 10px 1px $dark_color;
+        }
+        &::after {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .4s;
+        }
+    }
+    .btn-white {
+        background: $bg_white;
+        color: $dark_color;
+        font-weight: 450;
+        &::after {
+            background-color: $bg_white;
+        }
+    }
+}
+
+.heading-primary {
+    color: $bg_white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 1.5em;
+    letter-spacing: 10px;
+    font-weight: 400;
+    animation-name: moveinleft;
+    animation-duration: 3s;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    animation-name: moveinright ease-out;
+    animation: moveinright 1s ease-out;
+    animation-duration: 3s;
+}

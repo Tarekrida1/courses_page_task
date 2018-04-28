@@ -1,0 +1,38 @@
+.feature-section {
+    padding: 12rem 0 2rem 0;
+    margin-top: -7rem;
+    background: $color_1;
+    text-align: center;
+    h1 {
+        color: $bg_white;
+        padding-bottom: 3rem;
+        transition: all .3s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    .feat {
+        .feat-box {
+            font-size: 1.5rem;
+            border-radius: 3px;
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+            background-color: #f7f7f7;
+            margin: 1rem auto;
+            padding: 2rem 1rem;
+            transition: all .3s ease-in-out;
+            height: 400px;
+            width: 295px;
+            &:hover {
+                transform: translateY(-1.5rem) scale(1.03);
+                box-shadow: 0 1.5rem 4rem $rgba_back_darker;
+            }
+        }
+    }
+    .feat-icon {
+        background-image: linear-gradient(to right bottom, $color_1, $color_2);
+        display: inline-block;
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-bottom: 1rem
+    }
+}

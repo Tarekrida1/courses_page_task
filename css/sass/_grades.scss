@@ -1,0 +1,96 @@
+.grades {
+    padding: 3rem 0;
+    font-weight: 500;
+    h1 {
+        text-align: center;
+        padding: 1rem;
+    }
+    p {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .table {
+        box-shadow: 0.1rem 0.1rem 1rem 0rem;
+        thead th {
+            border: 3px solid $color_2;
+            text-align: center;
+        }
+        td {
+            border: 2px solid $color_1;
+            transition: all .3s ease-in-out;
+            .rate {
+                float: right;
+                font-weight: bold;
+                span:first-child {
+                    color: $color_1
+                }
+                span:last-child {
+                    color: $color_2;
+                }
+            }
+            a {
+                color: $color_2;
+                text-decoration: none;
+                transition: all .1s ease-in-out;
+                &:hover {
+                    border-bottom: 2px solid;
+                }
+            }
+        }
+    }
+}
+
+.popup {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.726);
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    top: -160%;
+    opacity: 0;
+    left: 0;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+    .popup_content {
+        padding: 1rem;
+        margin: 4rem auto;
+        width: 365px;
+        height: 570px;
+        background: white;
+        border: 1px solid #c4c4c4;
+        text-align: center;
+        border-radius: 1rem .4rem;
+        overflow: hidden;
+        left: 0;
+        top: 0;
+        box-shadow: 0 2rem 4rem $rgba_back_darker;
+        img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+        }
+        h2 {
+            padding: 1rem 0 0 0;
+        }
+        h4 {
+            color: $rgba_back_darker;
+        }
+        .social {
+            font-size: 30px;
+        }
+        .close-popup {
+            font-size: 35px;
+            float: right;
+            color: $color_1;
+            &:hover {
+                color: $color_2;
+            }
+        }
+    }
+}
+
+.popup:target {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
