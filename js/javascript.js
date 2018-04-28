@@ -1,5 +1,6 @@
+
 window.onload = function() {
-    document.getElementById('loading').style.opacity = '0';
+    document.getElementById('loading').style.display = 'none';
   };
 
 function logout() {
