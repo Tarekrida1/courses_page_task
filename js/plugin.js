@@ -1,6 +1,5 @@
 $(function () {
     'use strict';
-    $('.loading').fadeOut(900);
     $("body").niceScroll({
         cursorcolor: "#0097A7",
         cursorwidth: "10px"
