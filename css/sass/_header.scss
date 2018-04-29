@@ -79,7 +79,8 @@
     letter-spacing: 10px;
     font-weight: 400;
     animation-name: moveinleft;
-    animation-duration: 1s;
+    animation-duration: 3s;
+    
 }
 
 .heading-primary-sub {
@@ -88,5 +89,6 @@
     font-weight: 700;
     letter-spacing: 10px;
     animation-name: moveinright ease-out;
-    animation: moveinright 1s ease-out;
+    animation: moveinright 3s ease-out;
+   
 }

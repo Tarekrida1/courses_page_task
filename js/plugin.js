@@ -97,3 +97,13 @@ $(function () {
 
 
 });
+$(window).load(function(){
+    $("body").css("overflow","auto");
+    $(".loading-head").fadeOut(100, function(){
+        $(".loading-container").fadeOut(300, function(){
+            $(this).parent().fadeOut(500, function(){
+                $(this).remove();
+            });
+        });
+    });
+});

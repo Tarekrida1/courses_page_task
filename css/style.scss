@@ -7,6 +7,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Jua', sans-serif;
+    overflow: hidden;
 }
 
 .carousel-fade .carousel-item {
@@ -292,5 +293,73 @@ body {
         color: #666;
         text-decoration: none;
         font-size: 13px;
+    }
+}
+.loading {
+    background: linear-gradient(to right, $color_2, $color_1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999999999;
+    .loading-container {
+        position: relative;
+        background: $rgba_white;
+        width: 500px;
+        height: 100px;
+        margin:25px auto;
+        text-align: center;
+        display: block;
+        border-radius: 50px;
+       span {
+           width: 60px;
+           height: 60px;
+           background:$color_2;
+           border-radius: 50%; 
+           display: inline-block;
+           margin: 30px auto;
+           position: relative;
+           animation: moveup 1.5s infinite;
+       }
+       span:nth-of-type(1) {
+           left: 50px;
+           animation-delay: .25s;
+       }
+       span:nth-of-type(2) {
+        left: 40px;
+        animation-delay: .50s;
+    }
+    span:nth-of-type(3) {
+        left: 30px;
+        animation-delay: .75s;
+    }
+    span:nth-of-type(4) {
+        left: 20px;
+        animation-delay: 1s;
+    }
+    span:nth-of-type(5) {
+        left: 10px;
+        animation-delay: 1.25s;
+    }
+    span:nth-of-type(6) {
+        left: 0;
+        animation-delay: 1.5s;
+    }
+    @keyframes moveup {
+        0%   {
+            transform: translateY(0)
+        }
+        50%   {
+            transform: translateY(-15px);
+            background: $color_1;
+            
+        }
+        100%   {
+            transform: translateY(0)
+        }
+    }
+
+
     }
 }
