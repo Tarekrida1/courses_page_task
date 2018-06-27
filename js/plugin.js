@@ -123,7 +123,7 @@ $("#"+myID+"-content").fadeIn(1500);
 // tabs
 
 */
-$(".grades .table a, .signup .not-have a, .login-out-user").on("click", function(even){
+$(".grades .table a").on("click", function(even){
     event.preventDefault();
 $("." + $(this).data("popup")).fadeIn(300);
 $("body").css({
