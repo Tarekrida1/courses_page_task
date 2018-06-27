@@ -3,10 +3,11 @@
 @import "sass/_feature_section.scss";
 @import "sass/_grades.scss";
 @import "sass/_feat_students.scss";
+@import "sass/_login_page.scss";
+@import "sass/media.scss";
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Jua', sans-serif;
     overflow: hidden;
 }
 
@@ -20,20 +21,19 @@ body {
 }
 
 .icon {
-    width: 80px;
-    height: 80px;
-    margin-right: -23px;
-    padding: 5px;
+    width: 50px;
+    height: 50px;
     display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 0px;
+    line-height: 50px;
+
     a {
-        font-size: 35px;
-        background: $bg_white;
-        padding: 5px 10px;
-        border-radius: 50%;
         color: $color_2;
-        box-shadow: 0 0px 15px 0px #000;
-        transition: all .5s ease-in-out;
-        &:hover {
+        font-size: 30px;
+        transition: all .2s ease-in-out;
+                &:hover {
             color: $color_1;
             width: 95px;
             height: 95px;
@@ -44,45 +44,54 @@ body {
 /*  start fixed opsion */
 
 .fixed-option {
-    background: linear-gradient(to right, $color_2, $color_1);
-    color: #fff;
+    background: $bg_white;
+    color: $color_2;
     position: fixed;
+    overflow-y: auto;
     padding-top: 20px;
-    left: -240px;
+    left: 0;
+    transform: translateX(-100%);
     top: 0;
     height: 100%;
-    width: 240px;
+    width: 375px;
     z-index: 9999;
     box-shadow: 0 0px 23px -4px #000;
+    transition: all .2s ease-in-out;
     .close-nav {
         display: block;
-        padding: 10px;
+        height: 50px;
+        border-radius: 50%;
+        width: 50px;
+        margin-top: -15px;
+        margin-left: 5px;
         text-decoration: none;
         font-weight: bold;
-        color: $bg_white;
-        transition: all .3s ease-in-out;
+        border: 1px solid #e3e3e3;
+        color: $color_1;
+        transition: all .2s ease-in-out;
         text-align: center;
         font-size: 30px;
         cursor: pointer;
         &:hover {
-            color: $rgba_back_darker;
+            color: $color_2;
         }
     }
     .side-menu {
         text-align: center;
     }
-    .side-menu a {
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 20px;
-        margin: 5px 0;
-        width: 100%;
-        color: $bg_white;
-        transition: all .3s ease-in-out;
+    .side-menu a {   
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px 0;
+    width: 100%;
+    color: $color_2;
+    transition: all .2s ease-in-out;
         &:hover {
-            background: $color_1;
+            background: $color_2;
+            color: $bg_white;
             border-radius: 5px;
         }
     }
@@ -94,23 +103,35 @@ body {
     position: fixed;
     z-index: 55;
     display: flex;
-    color: #fff;
+    color: $rgba_back;
     transition: all 1s ease-in-out;
     .open-nav {
-        font-size: 30px;
-        left: 18px;
-        position: absolute;
-        margin: 15px 0;
-        cursor: pointer;
+        font-size: 25px;
+    left: 10px;
+    position: absolute;
+    margin: 4px -2px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e3e3e3;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    transition: all .2s ease-in-out;
+        a {
+            color: $color_2;
+            &:hover {
+                color: $color_1;
+            }
+        }
     }
     .login-out-user {
         padding: 1px 5px;
-        font-weight: 600;
         transition: all .2s ease-in-out;
         height: 28px;
         width: 63px;
         margin: 15px 10px 15px 0;
-        color: $bg_white;
+        color: $color_2;
         position: absolute;
         right: 1px;
         &:hover {
@@ -134,8 +155,7 @@ body {
         right: 72px;
         padding: 5px 0px 5px 0px;
         a {
-            color: $bg_white;
-            font-weight: 600;
+            color: $color_2;
             transition: all .2s ease-in-out;
             &:hover {
                 text-decoration: none;
@@ -211,79 +231,12 @@ body {
     visibility: hidden;
     opacity: 0;
     transform: rotate(-90deg);
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-in-out;
     &:target {
         visibility: visible;
         opacity: 1;
         transform: rotate(0);
         transform: translate(0);
-    }
-    .login-content {
-        margin: 7rem auto;
-        width: 340px;
-        height: 445px;
-        background: white;
-        border: 1px solid #c4c4c4;
-        text-align: center;
-        border-radius: 5rem 1rem;
-        overflow: hidden;
-        left: 0;
-        top: 0;
-        .close-login {
-            font-size: 35px;
-            color: $color_1;
-            margin-top: .5rem;
-        }
-        .facbook-login {
-            width: 180px;
-            margin-top: 1rem;
-            background: blue;
-        }
-    }
-    .login-logo {
-        background: $color_1;
-        width: 100%;
-        padding: 5px;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-    .login-input {
-        width: 285px;
-        height: 50px;
-        margin-bottom: 25px;
-        padding-left: 10px;
-        font-size: 15px;
-        background: rgba(255, 255, 255, 0.74);
-        border: 3px solid #29b6f6;
-        border-radius: 4px;
-        display: block;
-        margin: 15px auto;
-        transition: all .5s ease-in-out;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    input[type=text]:focus,
-    input[type=password]:focus,
-    input[type=name]:focus,
-    input[type=email]:focus {
-        border: 4px solid $color_1;
-    }
-    .login-input:focus {
-        border-color: #6e8095;
-        outline: none;
-    }
-    .login-button {
-        width: 100%;
-        height: 50px;
-        padding: 0;
-        font-size: 20px;
-        color: #fff;
-        text-align: center;
-        background: #f0776c;
-        border: 0;
-        border-radius: 5px;
-        cursor: pointer;
-        outline: 0;
     }
     .login-lost {
         text-align: center;
@@ -363,3 +316,80 @@ body {
 
     }
 }
+
+
+.login-content {
+    padding: 0;
+    overflow: hidden;
+    width: 380px;
+    height: 485px;
+    background: white;
+    border: 1px solid #c4c4c4;
+    text-align: center;
+    border-radius: 1rem .4rem;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin-top: -242.5px;
+    margin-left: -190px;
+    .close-login {
+        font-size: 35px;
+        color: $color_1;
+        margin-top: .5rem;
+    }
+    .facbook-login {
+        width: 180px;
+        margin-top: 1rem;
+        background: blue;
+    }
+    .login-logo {
+        background: $color_1;
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 2rem;
+        img {
+            height: 160px;
+            width: 160px;
+        }
+    }
+
+    .login-input {
+        width: 285px;
+        height: 50px;
+        margin-bottom: 25px;
+        padding-left: 10px;
+        font-size: 15px;
+        background: rgba(255, 255, 255, 0.74);
+        border: 3px solid #29b6f6;
+        border-radius: 4px;
+        display: block;
+        margin: 15px auto;
+        transition: all .5s ease-in-out;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    input[type=text]:focus,
+input[type=password]:focus,
+input[type=name]:focus,
+input[type=email]:focus {
+    border: 4px solid $color_1;
+}
+
+
+.login-button {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    background: #f0776c;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0;
+}
+
+}
+

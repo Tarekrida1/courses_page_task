@@ -1,21 +1,20 @@
 .feature-section {
     padding: 12rem 0 2rem 0;
     margin-top: -7rem;
-    background: $color_1;
     text-align: center;
     h1 {
-        color: $bg_white;
+        color: $color_2;
         padding-bottom: 3rem;
         transition: all .3s ease-in-out;
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.05) rotate(-1deg);
         }
     }
     .feat {
         .feat-box {
             font-size: 1.5rem;
             border-radius: 3px;
-            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
             background-color: #f7f7f7;
             margin: 1rem auto;
             padding: 2rem 1rem;
@@ -23,8 +22,8 @@
             height: 400px;
             width: 295px;
             &:hover {
-                transform: translateY(-1.5rem) scale(1.03);
-                box-shadow: 0 1.5rem 4rem $rgba_back_darker;
+                transform: translateY(-1.1rem) scale(1.01);
+                box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
             }
         }
     }

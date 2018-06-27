@@ -8,10 +8,12 @@
   <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
   <link rel="shortcut icon" href="img\logo.png">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/fontawesome.min.css">
-  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/fontawesome.css">
   <link rel="stylesheet" href="css/style.css">
-   <script src="js/javascript.js"></script>
+  <link rel="stylesheet" href="css/sass/media.css">
+  <script src="js/javascript.js"></script>
 </head>
 
 <body>
@@ -20,28 +22,41 @@
   <!-------------------- fixed options -------------->
   <div class="fixed-option">
     <div class="side-menu">
-      <a href="#" class="active">Home</a>
-      <a href="#feat-stu">features courses</a>
-      <a href="#">Latest News</a>
-      <a href="#">Courses</a>
+        <div class="close-nav"><i class="fa fa-close"></i></div>
+      <a href="index.html" class="active">Home</a>
+      <a href="#feat-stu">Latest News</a>
+      <a href="#">Features Courses</a>
+      <a href="#">Features Students</a>
+      <a href="#">Web Design Courses</a>
+      <a href="#">English Courses</a>
+      <a href="#feat-stu">ICDL Courses</a>
+      <a href="#">Germany Courses</a>
+      <a href="#">Italian Courses</a>
+      <a href="#">Mobile Apps Courses</a>
+      <a href="#feat-stu">Disktop Courses</a>
+      <a href="#">Maintaince Courses</a>
+      <a href="#">Marketing Courses</a>
       <a href="#">About Us</a>
       <a href="#">Contact Us</a>
     </div>
-    <div class="close-nav far fa-window-close"></div>
+ 
   </div>
   <!-------------------- end options -------------->
   <div class="main-header">
     <a class="brand" href="#">
       <img src="img/logo.png" title="campny logo">
     </a>
-    <a class="open-nav fas fa-bars"></a>
+    <div class="open-nav">
+      <i class=""><a class="fa fa-bars"></a></i>
+    </div>
+    
     <div class="user">
-      <a href="#waleed" class="user-pic">
+      <a href="#" class="user-pic" data-popup="waleed-popup">
         <img src="img/students/waleed.jpg" title="comrec logo">
       </a>
       <a class="user-name" href="#waleed" id="user-ahmed">Waleed,</a>
     </div>
-    <a class="login-out-user" href="#login" onclick="logout()" id="logout"> Logout</a>
+    <a class="login-out-user" href="login.html" onclick="logout()" id="logout"> Logout</a>
   </div>
   <!--------------------------- end navbar-->
   <!--------------------------------- start header-->
@@ -65,21 +80,21 @@
       <div class="row">
         <div class="feat col-md-6 col-lg-4">
           <div class="feat-box">
-            <i class="feat-icon fas fa-desktop fa-3x"></i>
+            <i class="feat-icon fa fa-desktop fa-3x"></i>
             <h3 class="feat-head">Programing Courses</h3>
             <p class="feat-text">Our beautifully-designed website templates come with hundreds of customizable features.</p>
           </div>
         </div>
         <div class="feat col-md-6 col-lg-4">
           <div class="feat-box">
-            <i class="feat-icon fas fa-language fa-3x"></i>
+            <i class="feat-icon fa fa-language fa-3x"></i>
             <h3 class="feat-head">languages Courses</h3>
             <p class="feat-text">Our beautifully-designed website templates come with hundreds of customizable features.</p>
           </div>
         </div>
         <div class="feat col-md-6 col-lg-4">
           <div class="feat-box">
-            <i class="feat-icon fas fa-handshake fa-3x"></i>
+            <i class="feat-icon fa fa-handshake fa-3x"></i>
             <h3 class="feat-head">Marketing Courses</h3>
             <p class="feat-text">Our beautifully-designed website templates come with hundreds of customizable features.</p>
           </div>
@@ -101,7 +116,7 @@
         <tbody>
           <tr>
             <td>
-              <a href="#ahmed">Ahmed Abdallah</a>
+              <a id="ahmed" href="#" data-popup="ahmed-popup">Ahmed Abdallah</a>
             </td>
             <td>60 of 60
               <div class="rate">
@@ -109,10 +124,10 @@
                 <span> Excellent </span>
               </div>
             </td>
-            <div class="popup" id="ahmed">
+            <div class="popup ahmed-popup">
               <div class="contaner">
                 <div class="popup_content">
-                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <a href="#" class="close-popup fa fa-close"></a>
                   <img src="img/students/ahmed.jpg">
                   <h2>Ahmed Abdallah</h2>
                   <h4>Web Designer</h4>
@@ -122,24 +137,24 @@
                   <div class="social">
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-facebook"></i>
                       </a>
                     </div>
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-twitter-square"></i>
-                      </a>
-                    </div>
-
-                    <div class="icon">
-                      <a href="#">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fa fa-twitter-square"></i>
                       </a>
                     </div>
 
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fa fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -153,7 +168,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#waleed">Waleed Mohamed</a>
+              <a href="#waleed" data-popup="waleed-popup">Waleed Mohamed</a>
             </td>
             <td>60 of 60
               <div class="rate">
@@ -161,10 +176,10 @@
                 <span> Excellent </span>
               </div>
             </td>
-            <div class="popup" id="waleed">
+            <div class="popup waleed-popup">
               <div class="contaner">
                 <div class="popup_content">
-                  <a href="#" class="close-popup far fa-window-close"></a>
+                  <a href="#" class="close-popup fa fa-close"></a>
                   <img src="img/students/waleed.jpg">
                   <h2>Waleed Mohamed</h2>
                   <h4>Student</h4>
@@ -174,24 +189,24 @@
                   <div class="social">
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-facebook"></i>
                       </a>
                     </div>
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-twitter-square"></i>
-                      </a>
-                    </div>
-
-                    <div class="icon">
-                      <a href="#">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fa fa-twitter-square"></i>
                       </a>
                     </div>
 
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fa fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -205,7 +220,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#mohamed">Mohamed Ahmed</a>
+              <a href="#" data-popup="mohamed-popup">Mohamed Ahmed</a>
             </td>
             <td>58 of 60
               <div class="rate">
@@ -213,10 +228,10 @@
                 <span> Excellent </span>
               </div>
             </td>
-            <div class="popup" id="mohamed">
+            <div class="popup mohamed-popup">
               <div class="contaner">
                 <div class="popup_content">
-                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <a href="#" class="close-popup fa fa-close"></a>
                   <img src="img/students/mohamed.jpg">
                   <h2>Mohamed Ahmed</h2>
                   <h4>Teacher</h4>
@@ -226,24 +241,24 @@
                   <div class="social">
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-facebook"></i>
                       </a>
                     </div>
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-twitter-square"></i>
-                      </a>
-                    </div>
-
-                    <div class="icon">
-                      <a href="#">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fa fa-twitter-square"></i>
                       </a>
                     </div>
 
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fa fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -257,7 +272,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#omar">Omar Mahmoud</a>
+              <a href="#omar" data-popup="omar-popup">Omar Mahmoud</a>
             </td>
             <td>55 of 60
               <div class="rate">
@@ -265,10 +280,10 @@
                 <span> Excellent </span>
               </div>
             </td>
-            <div class="popup" id="omar">
+            <div class="popup omar-popup">
               <div class="contaner">
                 <div class="popup_content">
-                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <a href="#" class="close-popup fa fa-close"></a>
                   <img src="img/students/omar.jpg">
                   <h2>Omar Mahmoud</h2>
                   <h4>Student</h4>
@@ -278,24 +293,24 @@
                   <div class="social">
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-facebook"></i>
                       </a>
                     </div>
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-twitter-square"></i>
-                      </a>
-                    </div>
-
-                    <div class="icon">
-                      <a href="#">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fa fa-twitter-square"></i>
                       </a>
                     </div>
 
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fa fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -309,7 +324,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#mostafa">Moustafa Abdelaziz</a>
+              <a href="#" data-popup="moustafa-popup">Moustafa Abdelaziz</a>
             </td>
             <td>54 of 60
               <div class="rate">
@@ -317,10 +332,10 @@
                 <span> Excellent </span>
               </div>
             </td>
-            <div class="popup" id="mostafa">
+            <div class="popup moustafa-popup">
               <div class="contaner">
                 <div class="popup_content">
-                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <a href="#" class="close-popup fa fa-close"></a>
                   <img src="img/students/moustafa.jpg">
                   <h2>Moustafa Abdelaziz</h2>
                   <h4></h4>
@@ -330,24 +345,24 @@
                   <div class="social">
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-facebook"></i>
                       </a>
                     </div>
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-twitter-square"></i>
-                      </a>
-                    </div>
-
-                    <div class="icon">
-                      <a href="#">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fa fa-twitter-square"></i>
                       </a>
                     </div>
 
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fa fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -361,7 +376,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#kareem">Kareem Taha</a>
+              <a href="#" data-popup="kareem-pop">Kareem Taha</a>
             </td>
             <td>53 of 60
               <div class="rate">
@@ -369,10 +384,10 @@
                 <span> Excellent </span>
               </div>
             </td>
-            <div class="popup" id="kareem">
+            <div class="popup kareem-pop">
               <div class="contaner">
                 <div class="popup_content">
-                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <a href="#" class="close-popup fa fa-close"></a>
                   <img src="img/students/kareem.jpg">
                   <h2>Kareem Taha</h2>
                   <h4></h4>
@@ -382,24 +397,24 @@
                   <div class="social">
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-facebook"></i>
                       </a>
                     </div>
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-twitter-square"></i>
-                      </a>
-                    </div>
-
-                    <div class="icon">
-                      <a href="#">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fa fa-twitter-square"></i>
                       </a>
                     </div>
 
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fa fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -413,7 +428,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#khaled">Khaled Hassan</a>
+              <a href="#" data-popup="khaled-popup">Khaled Hassan</a>
             </td>
             <td>50 of 60
               <div class="rate">
@@ -421,10 +436,10 @@
                 <span> Very Good </span>
               </div>
             </td>
-            <div class="popup" id="khaled">
+            <div class="popup khaled-popup">
               <div class="contaner">
                 <div class="popup_content">
-                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <a href="#" class="close-popup fa fa-close"></a>
                   <img src="img/students/khaled.jpg">
                   <h2>Khaled Hassan</h2>
                   <h4></h4>
@@ -434,24 +449,24 @@
                   <div class="social">
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-facebook"></i>
                       </a>
                     </div>
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-twitter-square"></i>
-                      </a>
-                    </div>
-
-                    <div class="icon">
-                      <a href="#">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fa fa-twitter-square"></i>
                       </a>
                     </div>
 
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fa fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -465,7 +480,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#salma">Salma Mohamed</a>
+              <a href="#" data-popup="salma-popup">Salma Mohamed</a>
             </td>
             <td>50 of 60
               <div class="rate">
@@ -473,10 +488,10 @@
                 <span> Very Good </span>
               </div>
             </td>
-            <div class="popup" id="salma">
+            <div class="popup salma-popup">
               <div class="contaner">
                 <div class="popup_content">
-                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <a href="#" class="close-popup fa fa-close"></a>
                   <img src="img/students/salma.jpg">
                   <h2>Salma Mohamed</h2>
                   <h4></h4>
@@ -486,24 +501,24 @@
                   <div class="social">
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-facebook"></i>
                       </a>
                     </div>
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-twitter-square"></i>
-                      </a>
-                    </div>
-
-                    <div class="icon">
-                      <a href="#">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fa fa-twitter-square"></i>
                       </a>
                     </div>
 
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fa fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -517,7 +532,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#nermeen">Nermeen Ahmed</a>
+              <a href="#" data-popup="nermeen-popup">Nermeen Ahmed</a>
             </td>
             <td>49 of 60
               <div class="rate">
@@ -525,10 +540,10 @@
                 <span> Very Good </span>
               </div>
             </td>
-            <div class="popup" id="nermeen">
+            <div class="popup nermeen-popup">
               <div class="contaner">
                 <div class="popup_content">
-                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <a href="#" class="close-popup fa fa-close"></a>
                   <img src="img/students/nermeen.jpg">
                   <h2>Nermeen Ahmed</h2>
                   <h4></h4>
@@ -538,24 +553,24 @@
                   <div class="social">
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-facebook"></i>
                       </a>
                     </div>
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-twitter-square"></i>
-                      </a>
-                    </div>
-
-                    <div class="icon">
-                      <a href="#">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fa fa-twitter-square"></i>
                       </a>
                     </div>
 
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fa fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -569,7 +584,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#mahmoud">Mahmoud Ali</a>
+              <a href="#" data-popup="mahmoud-popup">Mahmoud Ali</a>
             </td>
             <td>45 of 60
               <div class="rate">
@@ -577,10 +592,10 @@
                 <span> Good </span>
               </div>
             </td>
-            <div class="popup" id="mahmoud">
+            <div class="popup mahmoud-popup">
               <div class="contaner">
                 <div class="popup_content">
-                  <a href="#grades" class="close-popup far fa-window-close"></a>
+                  <a href="#" class="close-popup fa fa-close"></a>
                   <img src="img/students/mahoud.jpg">
                   <h2>Mahmoud Ali</h2>
                   <h4></h4>
@@ -590,24 +605,24 @@
                   <div class="social">
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-facebook"></i>
                       </a>
                     </div>
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-twitter-square"></i>
-                      </a>
-                    </div>
-
-                    <div class="icon">
-                      <a href="#">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fa fa-twitter-square"></i>
                       </a>
                     </div>
 
                     <div class="icon">
                       <a href="#">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a href="#">
+                        <i class="fa fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -624,29 +639,7 @@
     </div>
   </section>
   </div>
-  <div class="login" id="login">
-    <div class="container">
-      <form class="login-content">
-        <div class="login-logo">
-          <img src="img/logo.png" title="loco campny">
-        </div>
-        <input type="text" class="login-input" placeholder="Email Adress" autofocus>
-        <input type="password" class="login-input" placeholder="Password">
-        <button class="button-effect from-left">
-          <span class="fi1"></span>
-          <span class="fi2">Log In</span>
-        </button>
-        <button class="button-effect from-left facbook-login">
-          <span class="fi1"></span>
-          <span class="fi2">login with facebook</span>
-        </button>
-        <p class="login-lost">
-          <a href="">Forgot Password?</a>
-        </p>
-        <a href="#header" class="close-login far fa-window-close"></a>
-      </form>
-    </div>
-  </div>
+  
   <!--------------------------feat studets-->
   <section class="feat-students" id="feat-stu">
     <div class="container">
@@ -675,24 +668,24 @@
               <h4>Web Designer</h4>
               <div class="icon">
                 <a href="#">
-                  <i class="fab fa-facebook"></i>
+                  <i class="fa fa-facebook"></i>
                 </a>
               </div>
               <div class="icon">
                 <a href="#">
-                  <i class="fab fa-twitter-square"></i>
-                </a>
-              </div>
-
-              <div class="icon">
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
+                  <i class="fa fa-twitter-square"></i>
                 </a>
               </div>
 
               <div class="icon">
                 <a href="#">
-                  <i class="fab fa-linkedin"></i>
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </div>
+
+              <div class="icon">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
                 </a>
               </div>
             </div>
@@ -704,24 +697,24 @@
               <h4>Student</h4>
               <div class="icon">
                 <a href="#">
-                  <i class="fab fa-facebook"></i>
+                  <i class="fa fa-facebook"></i>
                 </a>
               </div>
               <div class="icon">
                 <a href="#">
-                  <i class="fab fa-twitter-square"></i>
-                </a>
-              </div>
-
-              <div class="icon">
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
+                  <i class="fa fa-twitter-square"></i>
                 </a>
               </div>
 
               <div class="icon">
                 <a href="#">
-                  <i class="fab fa-linkedin"></i>
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </div>
+
+              <div class="icon">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
                 </a>
               </div>
             </div>
@@ -733,24 +726,24 @@
               <h4>Teacher</h4>
               <div class="icon">
                 <a href="#">
-                  <i class="fab fa-facebook"></i>
+                  <i class="fa fa-facebook"></i>
                 </a>
               </div>
               <div class="icon">
                 <a href="#">
-                  <i class="fab fa-twitter-square"></i>
-                </a>
-              </div>
-
-              <div class="icon">
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
+                  <i class="fa fa-twitter-square"></i>
                 </a>
               </div>
 
               <div class="icon">
                 <a href="#">
-                  <i class="fab fa-linkedin"></i>
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </div>
+
+              <div class="icon">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
                 </a>
               </div>
             </div>
@@ -768,20 +761,37 @@
       <div class="container">
         <h1>Register for a Free Account</h1>
         <h4>make the most of your performance life</h4>
+     </div>
         <form class="signup-content">
-          <div class="signup-logo">
-            <img src="img/logo.png" title="loco campny">
+          <div class="custom-input first-name">
+          <input type="text" class="signup-input">
+            <label>first name</label>
+        </div>
+        <div class="custom-input last-name">
+            <input type="text" class="signup-input">
+              <label>last name</label>
           </div>
-          <input type="name" class="signup-input" placeholder="first name">
-          <input type="name" class="signup-input" placeholder="last name">
-          <input type="text" class="signup-input" placeholder="phone number">
-          <input type="email" class="signup-input" placeholder="Email Adress">
-          <input type="password" class="signup-input" placeholder="Password">
-          <input type="password" class="signup-input" placeholder="retype Password">
-          <p>By creating an account you agree to our
-            <a href="#">Terms & Privacy</a>.</p>
+          <div class="custom-input phone">
+              <input type="number" class="signup-input">
+                <label>phone number</label>
+            </div>
+            <div class="custom-input email">
+                <input type="email" class="signup-input">
+                  <label>Email Adress</label>
+              </div>
+              <div class="custom-input password">
+                  <input type="password" class="signup-input">
+                    <label>Password</label>
+                </div>
+                <div class="custom-input repassword">
+                    <input type="password" class="signup-input">
+                      <label>retype Password</label>
+                  </div>
+
+          <p></p>
           <label class="container">
-            <input type="checkbox"> By accept the terms of use and privacy policy
+            <input type="checkbox"> By accept you agree to our
+            <a href="#">Terms & Privacy</a>.
           </label>
           <button class="button-effect from-left">
             <span class="fi1"></span>
@@ -792,9 +802,11 @@
             <span class="fi2">Sign Up with facebook</span>
           </button>
           <p class="not-have">
-            <a href="#login">Already have an account?</a>
+            <a href="login.html" data-popup="signin-popup">Already have an account? Login now.</a>
+   
           </p>
         </form>
+    
       </div>
     </div>
     <!----------------------- end sgin up-->
@@ -805,43 +817,46 @@
         <a class="terms" href="#">Terms | Policy</a>
       </div>
       <div class="right">
-        <i class="fas fa-phone"></i>
+        <i class="fa fa-phone"></i>
         <span>01065596566</span>
-        <i class="go-up fas fa-angle-double-up"></i>
+        <i class="go-up fa fa-angle-double-up"></i>
       </div>
     </footer>
     <div class="message" id="message">
-      <div class="container">
+      
         <form class="message-content">
-          <div class="message-logo">
-            <img src="img/logo.png" title="loco campny">
-          </div>
           <h2>Contact us</h2>
-          <input type="name" class="message-input" placeholder="Full Name">
-          <input type="text" class="message-input" placeholder="Email Adress" autofocus>
+          <div class="custom-input first-name">
+              <input type="text" class="signup-input">
+                <label>Full ame</label>
+            </div>
+                <div class="custom-input email">
+                    <input type="email" class="signup-input">
+                      <label>Email Adress</label>
+                  </div>
           <textarea id="subject" name="subject" placeholder="Write a message for us.."></textarea>
           <button class="button-effect from-left">
             <span class="fi1"></span>
             <span class="fi2">submit</span>
           </button>
           <br>
-          <a href="#header" class="close-message far fa-window-close"></a>
+          <a href="#header" class="close-message fa fa-close"></a>
         </form>
-      </div>
     </div>
-    <a href="#message" class="message-click fas fa-envelope"></a>
+    <a href="#message" class="message-click fa fa-envelope"></a>
     <!---------------- end footer-->
     <div class="loading">
       <h1 class="loading-head">page is loading now</h1>
       <div class="loading-container">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-    </div>
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-1.12.1.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>

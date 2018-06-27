@@ -1,0 +1,102 @@
+
+
+/* sign up */
+
+.signin {
+    background: url(../img/1.jpeg);
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: $bg_white;
+    h1 {
+        padding-top: 100px;
+    }
+    .overlay {
+        height: 800px;
+        width: 100%;
+        background: rgba(105, 101, 101, 0.418);
+    }
+    .signin-content {
+        
+        z-index: 1;
+        height: 450px;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid $color_2;
+        border-radius: 10px;
+        overflow: hidden;
+        color: #000;
+        margin: 10px auto;
+        width: 300px;
+        left: 50%;
+        position: absolute;
+        margin-left: -150px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        .button-effect {
+            margin: 15px 0;
+            width: 185px
+        }
+    }
+  
+    .signin-input {
+        width: 75%;
+        height: 35px;
+        font-size: 15px;
+        margin: 15px auto;
+        font-size: 17px;
+    }
+.custom-input {
+    width: 80%;
+    position: relative;
+    padding: 5px;
+    margin: 25px auto;
+ 
+    label {
+        position: absolute;
+        left: 30%;
+        top: 20px;
+        font-size: 17px;
+        color: #999;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+    input {
+        height: 45px;
+    padding: 5px 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $color_2;
+    &:focus + label {
+        position: absolute;
+    left: 13%;
+    top: -10px;
+    font-size: 20px;
+        color: $color_2;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+    }
+    .has-data {
+        position: absolute;
+        left: 13%;
+        top: -10px;
+        font-size: 20px;
+        color: $color_2;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }  
+}
+}
